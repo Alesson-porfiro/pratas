@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../assets/dart-checkout-3298baf6d28c84a54fa4ce2ed4f89196.css">
+    <link rel="stylesheet" href="../assets/4600328c438f15f8.css">
+
+    
+    
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+
+</head>
+<body>
+    
+
+    <div id="persistentSlot"></div>
+<div class="headbar" style="background-color: black;">
+  <div class="container">
+    <div class="row">
+        <div id="headbar-right" class="col text-right font-small">
+          <div class="security-seal">
+            <span class="d-inline-block">
+              <img alt="Compra Segura" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.3.288/_next/server/static/img/safe-shopping.svg" class="security-seal-badge"></span>
+              <span class="d-inline-block text-left"><p class="m-none text-uppercase text-semi-bold">Compra Segura</p>
+                <p class="m-none text-uppercase">100% Protegido</p>
+              </span>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container main-container">
+        <div class="summary d-block d-md-none fixed sticky">
+          <div style="background-color: black;" role="menubar" tabindex="0" class="summary-container text-small">
+            <div class="container"><span class="summary-title pull-left">
+              <span style="background-color: black;"  class="summary-arrow summary-arrow-rounded" test-id="show-details">
+                <svg class="summary-arrow-icon" width="8px" height="8px" viewBox="0 0 1024 1024">
+                  <path d="M462.2,778.1L29.6,345.5c-27.5-27.5-27.5-72.1,0-99.6c27.5-27.5,72.1-27.5,99.6,0L512,628.7l382.7-382.8 c27.5-27.5,72.1-27.5,99.6,0c27.5,27.5,27.5,72.1,0,99.6L561.8,778.1C548,791.9,530,798.7,512,798.7 C494,798.7,475.9,791.9,462.2,778.1z"></path>
+                </svg>
+              </span>
+              <span style="color: white;" class="m-left-half">Ver detalhes do pedido</span>
+            </span>
+            <span style="background-color: black;" class="summary-total">R$&nbsp;1.300,00</span>
+          </div>
+        </div>
+        <div class="summary-details panel p-none" test-id="cart-details-desktop"></div>
+      </div>
+      <div class="breadcrumb breadcrumb-timeline-container" id="breadcrumb">
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <ul class="breadcrumb-timeline" style="color: white;">
+              <li>
+                <button class="breadcrumb-timeline-item disabled" aria-disabled="true" tabindex="-1">
+                  <div class="breadcrumb-timeline-item-icon"><svg class="svg" width="9px" height="9px" viewBox="0 0 1024 1024">
+                    <path d="M392.715 691.38L243.381 542.047C226.741 525.407 200.288 525.407 183.648 542.047C167.008 558.687 167.008 585.14 183.648 601.78L362.421 780.553C379.061 797.193 405.941 797.193 422.581 780.553L874.848 328.713C891.488 312.073 891.488 285.62 874.848 268.98C858.208 252.34 831.755 252.34 815.115 268.98L392.715 691.38Z"></path>
+                  </svg>
+                </div>
+                <p class="breadcrumb-timeline-item-text">Carrinho</p>
+              </button>
+            </li>
+            <li class="breadcrumb-timeline-line"></li>
+            <li>
+              <button class="breadcrumb-timeline-item current">
+                <div class="breadcrumb-timeline-item-icon">
+                  <svg class="svg" width="12px" height="12px" viewBox="0 0 1024 1024">
+                    <path d="M579.9,247.5H5v-78h613.9c21.5,0,39,17.5,39,39v105.4h177.7c11.8,0,23.1,5.4,30.5,14.6l144.4,180.6 c5.5,6.9,8.5,15.5,8.5,24.4v216.7c0,21.5-17.5,39-39,39h-76.4c-15.8,42.2-56.5,72.2-104.2,72.2c-61.4,0-111.2-49.8-111.2-111.2	S738,638.9,799.5,638.9c47.7,0,88.4,30,104.2,72.2H941v-164L816.8,391.9H657.9v358.2c0,21.5-17.5,39-39,39H402.2v-78h177.7V247.5z M402.2,391.9h-325v-78h325V391.9z M330,536.4H5v-78h325V536.4z M221.7,716.9c-18.3,0-33.2,14.9-33.2,33.2 c0,18.3,14.9,33.2,33.2,33.2c18.3,0,33.2-14.9,33.2-33.2C254.9,731.8,240,716.9,221.7,716.9z M110.5,750.1 c0-61.4,49.8-111.2,111.2-111.2c61.4,0,111.2,49.8,111.2,111.2s-49.8,111.2-111.2,111.2C160.3,861.3,110.5,811.6,110.5,750.1z M799.5,716.9c-18.3,0-33.2,14.9-33.2,33.2c0,18.3,14.9,33.2,33.2,33.2c18.3,0,33.2-14.9,33.2-33.2	C832.7,731.8,817.8,716.9,799.5,716.9z"></path>
+                  </svg>
+                </div>
+                <p class="breadcrumb-timeline-item-text">Entrega</p>
+              </button>
+            </li>
+            <li class="breadcrumb-timeline-line"></li>
+            <li>
+              <button class="breadcrumb-timeline-item disabled" aria-disabled="true" tabindex="-1">
+                <div class="breadcrumb-timeline-item-icon">
+                  <svg class="svg" width="9px" height="9px" viewBox="0 0 1024 1024">
+                    <path d="M944.5 140.5C910.9 106.9 865.3 88 817.8 88H182.3c-47.5 0-93.1 18.9-126.7 52.5C21.9 174.1 3 219.7 3 267.2v456.3c0 47.5 18.9 93.1 52.5 126.7 33.6 33.6 79.2 52.5 126.7 52.5h635.5c47.5 0 93.1-18.9 126.7-52.5C978.1 816.6 997 771 997 723.5V267.2c0-47.5-18.9-93.1-52.5-126.7zm-37.1 583c0 23.8-9.4 46.6-26.2 63.4-16.8 16.8-39.6 26.2-63.4 26.2H182.3c-23.8 0-46.6-9.4-63.4-26.2-16.8-16.8-26.2-39.6-26.2-63.4V450.6h814.7v272.9zm0-362.6H92.7v-93.7c0-23.8 9.4-46.6 26.2-63.4 16.8-16.8 39.6-26.2 63.4-26.2h635.5c23.8 0 46.6 9.4 63.4 26.2 16.8 16.8 26.2 39.6 26.2 63.4v93.7z"></path>
+                  </svg>
+                </div>
+                <p class="breadcrumb-timeline-item-text">Pagamento</p>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="summary-coupon d-md-none">
+        <div class="box-discount-coupon-applied">
+          <div class="row">
+            <div class="col-12 text-center">
+              <div id="" class="btn btn-link" tabindex="0" role="button">
+                <span>
+                  <svg class="coupon-icon" width="13px" height="13px" viewBox="0 0 1024 1024">
+                    <path d="M992.6,564.8L546.7,41.3C502.1-11,426.5-14,377.9,34.6L34.6,377.9C-14,426.5-11,502.1,41.3,546.6l523.4,445.9 c52.4,44.6,134.2,41.3,182.8-7.3l237.7-237.7C1033.9,699,1037.2,617.1,992.6,564.8z M709.5,802.8c-51.6,0-93.3-41.8-93.3-93.3 c0-51.5,41.8-93.3,93.3-93.3s93.3,41.8,93.3,93.3C802.8,761,761,802.8,709.5,802.8z"></path>
+                  </svg>
+                  <span class="text-pre-line">Adicionar cupom de desconto</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="main-row" class="row m-bottom m-top" style="opacity: 1;">
+        <div class="col-12 col-md-8" id="main-column">
+          <div class="d-block d-md-none w-100"></div>
+          <div class="form-step">
+            <form action="../pagamento-pulseira/pagamentoPulseira Escamada 15MM- 22CM.html" data-gtm-form-interact-id="0">
+              <div style="background-color: black; border: none;" class="panel panel-with-header m-bottom-half" id="contact-info">
+                <div id="content-email">
+                  <h3 style="background-color: black; font-size: 40px; margin: 15px; font-weight:750;" class="">Dados de contato</h3>
+                  <div class="form-group">
+                    <div class="has-float-label">
+                      <input style="background-color: black; border-radius: 8px; font-size: 18px; border-color: rgba(255, 255, 255, .3);" type="email" class="form-control" name="contact.email" value="" data-testid="email" autocomplete="shipping email" autocapitalize="on" placeholder=" " id="contact.email" aria-labelledby="label_contact.email">
+                      <label  class="input-label" id="label_contact.email" for="contact.email">E-mail</label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-checkbox form-options-label" for="acceptedMarketing">
+                      <input type="checkbox" validate="notEmpty" id="acceptedMarketing" name="acceptedMarketing">
+                      <div class="form-options-content">
+                        <span class="form-group-icon">
+                          <svg class="unchecked" width="17px" height="17px" viewBox="0 0 1024 1024">
+                            <path d="M914.3,0H109.7C49.1,0,0,49.1,0,109.7v804.6C0,974.9,49.1,1024,109.7,1024h804.6c60.6,0,109.7-49.1,109.7-109.7V109.7 C1024,49.1,974.9,0,914.3,0z M900.6,914.3H123.4c-7.5,0-13.7-6.2-13.7-13.7V123.4c0-7.5,6.2-13.7,13.7-13.7h777.1 c7.5,0,13.7,6.2,13.7,13.7v777.1C914.3,908.1,908.1,914.3,900.6,914.3z"></path>
+                          </svg>
+                          <svg class="checked" width="17px" height="17px" viewBox="0 0 1024 1024">
+                            <path d="M914.3,1024H109.7C49.1,1024,0,974.9,0,914.3V109.7C0,49.1,49.1,0,109.7,0h804.6C974.9,0,1024,49.1,1024,109.7v804.6 C1024,974.9,974.9,1024,914.3,1024z M446.4,799.9L867,379.3c14.3-14.3,14.3-37.4,0-51.7l-51.7-51.7c-14.3-14.3-37.4-14.3-51.7,0 l-343,343L260.4,458.7c-14.3-14.3-37.4-14.3-51.7,0L157,510.4c-14.3,14.3-14.3,37.4,0,51.7l237.7,237.7 C409,814.1,432.1,814.1,446.4,799.9L446.4,799.9z"></path>
+                          </svg>
+                        </span>
+                        <span style="font-size: 14px;" class="form-options-label">Receber ofertas e novidades por e-mail</span>
+                      </div>
+                    </label>
+                  </div>
+                  <div id="buyMoreFaster"></div>
+                </div>
+              </div>
+              <div style="background-color: black; border: none;" class="panel panel-with-header m-bottom-half">
+                <div id="shipping-section" class="shipping-calculator">
+                  <h3 style="background-color: black; font-size: 40px; margin: 0; font-weight:750;" class="">Entrega</h3>
+                </div>
+                <div style="display: flex;" class="shipping-options-container new-shipping-flow">
+                  <div class="shipping-options m-none">
+                    <div class="radio-group">
+                      <div class="shipping-options-ship ">
+                        <div style="border-color: white;" class="" role="button" id="radio-option-267b16401619c4" data-testid="radio-option-267b16401619c4" tabindex="0" aria-label="[object Object]">
+                          <label class="label" for="267b16401619c4"><input type="radio" id="267b16401619c4" name="" readonly="" value="267b16401619c4" checked=""><div class="selector"></div>
+                            <div class="shipping-method-item">
+                              <span>
+                                <h4 style="color: white; font-size: 18px;" class="shipping-method-item-price m-top-none">
+                                  <span>R$&nbsp;00,00</span>
+                                </h4>
+                                <div style="font-size: 20px;" class="shipping-method-item-name text-semi-bold">Correios - SEDEX (via Melhor Envio)</div>
+                                <div style="font-size: 18px;" class="shipping-method-item-desc text-small opacity-80">Chega entre sexta-feira  e segunda-feira</div>
+                            </span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div style="background-color: black; border: none;" class="panel">
+    <div id="address-form-section" class="shipping-address-container">
+        <h4 style="background-color: black; font-size: 40px; margin: 15px; font-weight:750" class="">Dados para entrega</h4>
+        <div class="form-group">
+            <div class="has-float-label">
+                <input style="background-color: black; border-radius: 8px; font-size: 18px; border-color: rgba(255, 255, 255, .3);" type="text" class="form-control" name="shippingAddress.first_name" data-testid="shipping_first_name" autocomplete="shipping given-name" placeholder=" " autocapitalize="on" id="shippingAddress.first_name" aria-labelledby="label_shippingAddress.first_name" value="">
+                <label class="input-label" id="label_shippingAddress.first_name" for="shippingAddress.first_name">Nome</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="has-float-label">
+                <input style="background-color: black; border-radius: 8px; font-size: 18px; border-color: rgba(255, 255, 255, .3);" type="text" class="form-control" name="shippingAddress.last_name" data-testid="shipping_last_name" autocomplete="shipping family-name" placeholder=" " autocapitalize="on" id="shippingAddress.last_name" aria-labelledby="label_shippingAddress.last_name" value="">
+                <label class="input-label" id="label_shippingAddress.last_name" for="shippingAddress.last_name">Sobrenome</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="has-float-label">
+                <input style=" border-radius: 8px; font-size: 18px; border-color: rgba(255, 255, 255, .3); background-color: black;" type="tel" class="form-control" name="shippingAddress.phone" data-testid="shipping_phone" autocomplete="shipping tel" placeholder=" " autocapitalize="on" id="shippingAddress.phone" aria-labelledby="label_shippingAddress.phone" value="">
+                <label class="input-label" id="label_shippingAddress.phone" for="shippingAddress.phone">Telefone com DDD</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="">
+                <div class="">
+                    <div class="user-detail-icon icon-area"></div>
+                    <div class="center-area p-right">
+                        <div class="content"></div>
+                    </div>
+                    <div class="change-button-area">
+                        <div class="block-flex">
+                            <div id="" class="btn btn-link" tabindex="0" role="button"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row third-gutters">
+            <div class="form-group col-sm-12 col-md-5">
+                <div class="has-float-label">
+                    <input style=" border-radius: 8px; font-size: 18px; border-color: rgba(255, 255, 255, .3); background-color: black;" type="text" class="form-control" name="shippingAddress.number" inputmode="numeric" data-testid="shipping_number" autocomplete="shipping address-line2" maxlength="15" placeholder=" " autocapitalize="on" id="shippingAddress.number" aria-labelledby="label_shippingAddress.number" value="">
+                    <label class="input-label" id="label_shippingAddress.number" for="shippingAddress.number">Número</label>
+                    <div class="input-button">
+                        <div class="form-group">
+                            <label class="form-checkbox form-options-label" for="shipping_numbercheckbox">
+                                <input  validate="notEmpty" id="shipping_numbercheckbox" type="checkbox" name="shipping_numbercheckbox" checked="" data-gtm-form-interact-field-id="0"><div class="form-options-content"><span class="form-group-icon">
+                                    <svg class="unchecked" width="17px" height="17px" viewBox="0 0 1024 1024">
+                                        <path d="M914.3,0H109.7C49.1,0,0,49.1,0,109.7v804.6C0,974.9,49.1,1024,109.7,1024h804.6c60.6,0,109.7-49.1,109.7-109.7V109.7 C1024,49.1,974.9,0,914.3,0z M900.6,914.3H123.4c-7.5,0-13.7-6.2-13.7-13.7V123.4c0-7.5,6.2-13.7,13.7-13.7h777.1 c7.5,0,13.7,6.2,13.7,13.7v777.1C914.3,908.1,908.1,914.3,900.6,914.3z">
+                                        </path>
+                                    </svg>
+                                    <svg class="checked" width="17px" height="17px" viewBox="0 0 1024 1024">
+                                        <path d="M914.3,1024H109.7C49.1,1024,0,974.9,0,914.3V109.7C0,49.1,49.1,0,109.7,0h804.6C974.9,0,1024,49.1,1024,109.7v804.6 C1024,974.9,974.9,1024,914.3,1024z M446.4,799.9L867,379.3c14.3-14.3,14.3-37.4,0-51.7l-51.7-51.7c-14.3-14.3-37.4-14.3-51.7,0 l-343,343L260.4,458.7c-14.3-14.3-37.4-14.3-51.7,0L157,510.4c-14.3,14.3-14.3,37.4,0,51.7l237.7,237.7 C409,814.1,432.1,814.1,446.4,799.9L446.4,799.9z"></path>
+                                    </svg>
+                                </span>
+                                <span class="form-options-label">Sem número</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group col-sm-12 col-md-7">
+            <div class="has-float-label">
+                <input style=" border-radius: 8px; font-size: 18px; border-color: rgba(255, 255, 255, .3); background-color: black;" type="text" class="form-control" name="shippingAddress.floor" data-testid="shipping_floor" autocomplete="shipping address-floor" maxlength="30" placeholder=" " autocapitalize="on" id="shippingAddress.floor" aria-labelledby="label_shippingAddress.floor" value="">
+                <label class="input-label" id="label_shippingAddress.floor" for="shippingAddress.floor">Complemento (opcional)</label>
+            </div>
+        </div>
+    </div>
+    <div class="row third-gutters">        
+    </div>
+</div>
+</div>
+<div style=" border: none; background-color: black;" class="panel panel-with-header">
+    <h3 style=" background-color: black; font-size: 40px; margin: 15px; font-weight:750" class="">Dados para nota fiscal<div class="panel-header-tooltip pull-right tooltip-small" data-balloon-pos="left" data-balloon="Usaremos essas informações para emitir a nota fiscal da venda." role="button" tabindex="0">
+        <div>
+            <svg class="tooltip-icon" width="16px" height="16px" viewBox="0 0 1024 1024">
+                <path d="M513,98.2C283.9,98.2,98.2,283.9,98.2,513c0,229.1,185.7,414.8,414.8,414.8c229.1,0,414.8-185.7,414.8-414.8 C927.8,283.9,742.1,98.2,513,98.2z M6,513C6,233,233,6,513,6c280,0,507,227,507,507c0,280-227,507-507,507C233,1020,6,793,6,513z M524.9,329.8c-21.5-3.7-43.5,0.4-62.3,11.4c-18.8,11-33,28.3-40.3,48.9c-8.4,24-34.8,36.6-58.8,28.2c-24-8.4-36.6-34.8-28.2-58.8	c14.4-41.1,43-75.7,80.5-97.8c37.5-22.1,81.7-30.1,124.6-22.8c42.9,7.4,81.8,29.7,109.9,63c28,33.3,43.4,75.4,43.3,119 c0,49.3-26,87-52.8,112.7c-26.8,25.7-58.6,43.5-81.1,54.3c-1.8,0.9-3.1,2.1-3.8,3.1c-0.3,0.5-0.5,0.9-0.5,1.1 c-0.1,0.2-0.1,0.2-0.1,0.2v12.9c0,25.5-20.6,46.1-46.1,46.1c-25.5,0-46.1-20.6-46.1-46.1v-12.9c0-40.1,25.3-72.5,56.8-87.6 c18.3-8.8,40.3-21.6,57.1-37.7c16.8-16.1,24.4-31.4,24.4-46.2v-0.1c0-21.8-7.6-42.8-21.7-59.5C565.8,344.6,546.4,333.4,524.9,329.8z M559.1,743.5c0,25.5-20.6,46.1-46.1,46.1c-25.5,0-46.1-20.6-46.1-46.1s20.6-46.1,46.1-46.1C538.5,697.4,559.1,718,559.1,743.5z"></path></svg>
+            </div>
+        </div>
+    </h3>
+    <div  class="form-group">
+        <div class="has-float-label select-container">
+            <select style=" border-radius: 8px; font-size: 18px; border-color: rgba(255, 255, 255, .3); background-color: black; color: white;" id="billingAddress.country" name="billingAddress.country" class="form-control form-control-select" data-testid="billing_country"><option value="AR">Argentina</option><option value="BR">Brasil</option><option value="CL">Chile</option><option value="CO">Colômbia</option><option value="MX">México</option><option value="AF">Afeganistão</option><option value="AL">Albânia</option><option value="DE">Alemanha</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguila</option><option value="MK">Antiga República Jugoslava da Macedónia </option><option value="AN">Antilhas Neerlandesas</option><option value="AG">Antígua e Barbuda</option><option value="DZ">Argélia</option><option value="AM">Arménia</option><option value="AW">Aruba</option><option value="SA">Arábia Saudita</option><option value="AU">Austrália</option><option value="AZ">Azerbaijão</option><option value="BS">Baamas</option><option value="BD">Bangladeche</option><option value="BB">Barbados</option><option value="BH">Barém</option><option value="BZ">Belize</option><option value="BJ">Benim</option><option value="BM">Bermudas</option><option value="BY">Bielorrússia</option><option value="BO">Bolívia</option><option value="BW">Botsuana</option><option value="BN">Brunei</option><option value="BG">Bulgária</option><option value="BF">Burquina Faso</option><option value="BI">Burundi</option><option value="BT">Butão</option><option value="BE">Bélgica</option><option value="BA">Bósnia e Herzegovina</option><option value="CV">Cabo Verde</option><option value="CM">Camarões</option><option value="KH">Camboja</option><option value="CA">Canadá</option><option value="QA">Catar</option><option value="KZ">Cazaquistão</option><option value="TD">Chade</option><option value="CN">China</option><option value="CY">Chipre</option><option value="KM">Comores</option><option value="CG">Congo-Brazzaville</option><option value="CD">Congo-Kinshasa (Zaire)</option><option value="KP">Coreia do Norte</option><option value="KR">Coreia do Sul</option><option value="CR">Costa Rica</option><option value="CI">Costa do Marfim</option><option value="HR">Croácia</option><option value="CU">Cuba</option><option value="DK">Dinamarca</option><option value="DM">Domínica</option><option value="EG">Egipto</option><option value="AE">Emirados Árabes Unidos</option><option value="EC">Equador</option><option value="ER">Eritreia</option><option value="SK">Eslováquia</option><option value="SI">Eslovénia</option><option value="ES">Espanha</option><option value="US">Estados Unidos</option><option value="EE">Estónia</option><option value="ET">Etiópia</option><option value="FO">Faroé</option><option value="PH">Filipinas</option><option value="FI">Finlândia</option><option value="FR">França</option><option value="GA">Gabão</option><option value="GH">Gana</option><option value="GE">Geórgia</option><option value="GI">Gibraltar</option><option value="GD">Granada</option><option value="GL">Gronelândia</option><option value="GR">Grécia</option><option value="GP">Guadalupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GG">Guernsey</option><option value="GY">Guiana</option><option value="GF">Guiana Francesa</option><option value="GN">Guiné</option><option value="GQ">Guiné Equatorial</option><option value="GW">Guiné-Bissau</option><option value="GM">Gâmbia</option><option value="HT">Haiti</option><option value="HN">Honduras</option><option value="HK">Hong Kong</option><option value="HU">Hungria</option><option value="BV">Ilha Bouvet</option><option value="CX">Ilha Christmas</option><option value="NF">Ilha Norfolk</option><option value="IM">Ilha de Man</option><option value="KY">Ilhas Caimão</option><option value="CC">Ilhas Cocos</option><option value="CK">Ilhas Cook</option><option value="FK">Ilhas Falkland</option><option value="FJ">Ilhas Fiji</option><option value="GS">Ilhas Geórgia do Sul e Sandwich do Sul</option><option value="HM">Ilhas Heard e McDonald</option><option value="MH">Ilhas Marshall</option><option value="UM">Ilhas Menores Distantes dos Estados Unidos</option><option value="SB">Ilhas Salomão</option><option value="TC">Ilhas Turcas e Caicos</option><option value="VI">Ilhas Virgens Americanas</option><option value="VG">Ilhas Virgens Britânicas</option><option value="ID">Indonésia</option><option value="IQ">Iraque</option><option value="IE">Irlanda</option><option value="IR">Irão</option><option value="IS">Islândia</option><option value="IL">Israel</option><option value="IT">Itália</option><option value="YE">Iémen</option><option value="JM">Jamaica</option><option value="JP">Japão</option><option value="JE">Jersey</option><option value="DJ">Jibuti</option><option value="JO">Jordânia</option><option value="KW">Koweit (Kuwait)</option><option value="LA">Laos</option><option value="LS">Lesoto</option><option value="LV">Letónia</option><option value="LR">Libéria</option><option value="LI">Listenstaine</option><option value="LT">Lituânia</option><option value="LU">Luxemburgo</option><option value="LB">Líbano</option><option value="LY">Líbia</option><option value="MO">Macau</option><option value="MG">Madagáscar</option><option value="MW">Malavi</option><option value="MV">Maldives</option><option value="ML">Mali</option><option value="MT">Malta</option><option value="MY">Malásia</option><option value="MP">Marianas do Norte</option><option value="MA">Marrocos</option><option value="MQ">Martinica</option><option value="MR">Mauritânia</option><option value="MU">Maurícia</option><option value="YT">Mayotte</option><option value="MM">Mianmar (Birmânia)</option><option value="FM">Micronésia</option><option value="MD">Moldávia (Moldova)</option><option value="MN">Mongólia</option><option value="ME">Montenegro</option><option value="MS">Montserrate</option><option value="MZ">Moçambique</option><option value="MC">Mónaco</option><option value="NA">Namíbia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NI">Nicarágua</option><option value="NG">Nigéria</option><option value="NU">Niue</option><option value="NO">Noruega</option><option value="NC">Nova Caledónia</option><option value="NZ">Nova Zelândia</option><option value="NE">Níger</option><option value="OM">Omã</option><option value="PW">Palau</option><option value="PA">Panamá</option><option value="PG">Papuásia-Nova Guiné</option><option value="PK">Paquistão</option><option value="PY">Paraguai</option><option value="NL">Países Baixos</option><option value="PE">Peru</option><option value="PN">Pitcairn</option><option value="PF">Polinésia Francesa</option><option value="PL">Polónia</option><option value="PR">Porto Rico</option><option value="PT">Portugal</option><option value="KG">Quirguizistão</option><option value="KI">Quiribati</option><option value="KE">Quénia</option><option value="GB">Reino Unido</option><option value="CF">República Centro-Africana</option><option value="CZ">República Checa</option><option value="DO">República Dominicana</option><option value="RE">Reunião</option><option value="RO">Roménia</option><option value="RW">Ruanda</option><option value="RU">Rússia</option><option value="SV">Salvador</option><option value="WS">Samoa</option><option value="AS">Samoa Americana</option><option value="SH">Santa Helena</option><option value="LC">Santa Lúcia</option><option value="VA">Santa Sé (Cidade do Vaticano)</option><option value="EH">Sara Ocidental</option><option value="SC">Seicheles</option><option value="SN">Senegal</option><option value="SL">Serra Leoa</option><option value="SG">Singapura</option><option value="SO">Somália</option><option value="LK">Sri Lanca</option><option value="SZ">Suazilândia</option><option value="SD">Sudão</option><option value="CH">Suiça</option><option value="SR">Suriname</option><option value="SE">Suécia</option><option value="SJ">Svalbard e Jan Mayen</option><option value="KN">São Cristóvão e Nevis</option><option value="SM">São Marino</option><option value="MF">São Martinho</option><option value="PM">São Pedro e Miquelon</option><option value="ST">São Tomé and Príncipe</option><option value="VC">São Vicente e Granadinas</option><option value="BL">São_Bartolomeu</option><option value="RS">Sérvia</option><option value="SY">Síria</option><option value="TH">Tailândia</option><option value="TW">Taiwan</option><option value="TJ">Tajiquistão</option><option value="TZ">Tanzânia</option><option value="IO">Território Britânico do Oceano Índico</option><option value="TF">Territórios Austrais Franceses</option><option value="PS">Territórios Palestinianos</option><option value="TL">Timor-Leste</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TT">Trindade e Tobago</option><option value="TN">Tunísia</option><option value="TM">Turquemenistão</option><option value="TR">Turquia</option><option value="TV">Tuvalu</option><option value="UA">Ucrânia</option><option value="UG">Uganda</option><option value="UY">Uruguai</option><option value="UZ">Usbequistão</option><option value="VU">Vanuatu</option><option value="VE">Venezuela</option><option value="VN">Vietname</option><option value="WF">Wallis e Futuna</option><option value="ZW">Zimbabué</option><option value="ZM">Zâmbia</option><option value="ZA">África do Sul</option><option value="AT">Áustria</option><option value="AX">Åland</option><option value="IN">Índia</option></select>
+            <label class="select-label" for="billingAddress.country">País</label>
+            <div class="select-icon">
+                <svg class="svg" width="14px" height="14px" viewBox="0 0 1024 1024">
+                    <path d="M455.9,816.9L25.1,386.2c-29.8-29.8-29.8-77.9,0-107.4l71.6-71.6c29.8-29.8,77.9-29.8,107.4,0l305.3,305.3l305.3-305.3 c29.8-29.8,77.9-29.8,107.4,0l72.2,71.3c29.8,29.8,29.8,77.9,0,107.4L563.5,816.6C533.8,846.7,485.6,846.7,455.9,816.9z"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="form-group form-group-pending">
+        <div class="has-float-label">
+            <input style=" border-radius: 8px; font-size: 18px; border-color: rgba(255, 255, 255, .3); background-color: black;" class="form-control" placeholder=" " type="text" name="billingAddress.id_number" id="billingAddress.id_number" maxlength="18" inputmode="numeric" value="">
+            <label class="input-label" for="billingAddress.id_number">CPF ou CNPJ</label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="form-checkbox form-options-label" for="billingAddress.sameAddress">
+            <input validate="notEmpty" id="billingAddress.sameAddress" type="checkbox" name="" checked="" data-gtm-form-interact-field-id="1">
+            <div class="form-options-content">
+                <span class="form-group-icon">
+                    <svg class="unchecked" width="17px" height="17px" viewBox="0 0 1024 1024">
+                        <path d="M914.3,0H109.7C49.1,0,0,49.1,0,109.7v804.6C0,974.9,49.1,1024,109.7,1024h804.6c60.6,0,109.7-49.1,109.7-109.7V109.7 C1024,49.1,974.9,0,914.3,0z M900.6,914.3H123.4c-7.5,0-13.7-6.2-13.7-13.7V123.4c0-7.5,6.2-13.7,13.7-13.7h777.1 c7.5,0,13.7,6.2,13.7,13.7v777.1C914.3,908.1,908.1,914.3,900.6,914.3z"></path>
+                    </svg>
+                    <svg class="checked" width="17px" height="17px" viewBox="0 0 1024 1024">
+                        <path d="M914.3,1024H109.7C49.1,1024,0,974.9,0,914.3V109.7C0,49.1,49.1,0,109.7,0h804.6C974.9,0,1024,49.1,1024,109.7v804.6 C1024,974.9,974.9,1024,914.3,1024z M446.4,799.9L867,379.3c14.3-14.3,14.3-37.4,0-51.7l-51.7-51.7c-14.3-14.3-37.4-14.3-51.7,0 l-343,343L260.4,458.7c-14.3-14.3-37.4-14.3-51.7,0L157,510.4c-14.3,14.3-14.3,37.4,0,51.7l237.7,237.7 C409,814.1,432.1,814.1,446.4,799.9L446.4,799.9z"></path>
+                    </svg>
+                </span>
+                <span  class="form-options-label">Usar as mesmas informações da entrega</span>
+            </div>
+        </label>
+    </div>
+    <div id="address-form-section" class="shipping-address-container m-top-half"><h4 style="font-size: 30px; margin: 15px; font-weight:750" class="panel-subheader">Dados de quem vai fazer o pagamento</h4>
+        <div class="form-group">
+            <div class="has-float-label">
+                <input style=" color: white; border-radius: 8px; font-size: 18px; border-color: rgba(255, 255, 255, .3); background-color: black;" type="text" class="form-control" name="billingAddress.first_name" data-testid="billing_first_name" autocomplete="billing given-name" placeholder=" " autocapitalize="on" id="billingAddress.first_name" aria-labelledby="label_billingAddress.first_name" value="">
+                <label class="input-label" id="label_billingAddress.first_name" for="billingAddress.first_name">Nome</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="has-float-label">
+                <input  style=" color: white; border-radius: 8px; font-size: 18px; border-color: rgba(255, 255, 255, .3); background-color: black;" type="text" class="form-control" name="billingAddress.last_name" data-testid="billing_last_name" autocomplete="billing family-name" placeholder=" " autocapitalize="on" id="billingAddress.last_name" aria-labelledby="label_billingAddress.last_name" value="">
+                <label class="input-label" id="label_billingAddress.last_name" for="billingAddress.last_name">Sobrenome</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="has-float-label">
+                <input style=" color: white; border-radius: 8px; font-size: 18px; border-color: rgba(255, 255, 255, .3); background-color: black;" type="tel" class="form-control" name="billingAddress.phone" data-testid="billing_phone" autocomplete="billing tel" placeholder=" " autocapitalize="on" id="billingAddress.phone" aria-labelledby="label_billingAddress.phone" value=""><label class="input-label" id="label_billingAddress.phone" for="billingAddress.phone">Telefone com DDD</label>
+            </div>
+        </div>
+        <div class="">
+            <div class="has-float-label">
+                <input style=" border-radius: 8px; font-size: 18px; border-color: rgba(255, 255, 255, .3);background-color: black;"type="text" class="form-control" name="billingAddress.zipcode" data-testid="billing_zipcode" maxlength="20" autocomplete="billing postal-code" inputmode="numeric" placeholder=" " autocapitalize="on" id="billingAddress.zipcode" aria-labelledby="label_billingAddress.zipcode" value="" data-gtm-form-interact-field-id="3">
+                <label class="input-label" id="label_billingAddress.zipcode" for="billingAddress.zipcode">CEP</label>
+            </div>
+            <div class="error"><div class="">
+    <span></span>
+  </div>
+  </div>
+  </div>
+  <div class="row third-gutters">
+</div>
+</div>
+</div>
+<a href="../pagamento-pulseira/pagamentoPulseira Escamada 15MM- 22CM.html">
+<button style=" border-radius: 20px; background-color: whitesmoke;" type="submit" id="" class="pull-right text-uppercase m-bottom btn btn-primary btn-submit-step" tabindex="0">
+  <span style="color: black;">Continuar para pagamento</span>
+  </button>
+</a>
+<div id="afterButtonChangeStep"></div>
+</form>
+</div>
+</div>
+<div class="col-12 col-md-4" id="secondary-column">
+    <div class="summary d-none d-md-block sticky">
+      <div style="background-color: black;" class="summary-details panel p-none" test-id="cart-details-desktop">
+        <table class="table table-scrollable" test-id="product-table">
+          <tbody>
+            <tr>
+              <td class="summary-img-wrap">
+                <div class="summary-img">
+                  <div class="summary-img-thumb">
+                    <img alt="" title="" src="https://i.pinimg.com/736x/c9/a0/dc/c9a0dc926dbf38cfe8cdd98e73b2d53d.jpg">
+                  </div>
+                </div>
+              </td>
+              <td test-id="product-name-qty">Pulseira Escamada 15MM- 22CM × 1</td>
+              <td class="table-price text-right" width="150px" test-id="product-subtotal">
+                <span>R$&nbsp;580,00</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-subtotal">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>Subtotal</td>
+                <td class="text-right" test-id="cart-subtotal">
+                  <span>R$&nbsp;580,00</span>
+                </td>
+              </tr>
+              <tr class="table-shipping-cost">
+                <td>Custo de frete<!-- --> </td>
+                <td class="text-right" test-id="cart-shipping-cost">
+                  <span>R$&nbsp;00,00</span>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot class="table-footer">
+              <tr>
+                <td class="table-price">Total</td>
+                <td class="text-right table-price" test-id="cart-total">
+                  <span>R$&nbsp;580,00</span>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <div class="summary-coupon">
+          <div style=" border-radius: 20px; background-color: black;" class="box-discount-coupon-applied">
+            <div class="row">
+              <div class="col-12 text-center">
+                <div id="" style="text-decoration: none;" class="btn btn-link" tabindex="0" role="button">
+                  <span>
+                    <svg style="color: white; " class="coupon-icon" width="13px" height="13px" viewBox="0 0 1024 1024">
+                      <path d="M992.6,564.8L546.7,41.3C502.1-11,426.5-14,377.9,34.6L34.6,377.9C-14,426.5-11,502.1,41.3,546.6l523.4,445.9 c52.4,44.6,134.2,41.3,182.8-7.3l237.7-237.7C1033.9,699,1037.2,617.1,992.6,564.8z M709.5,802.8c-51.6,0-93.3-41.8-93.3-93.3 c0-51.5,41.8-93.3,93.3-93.3s93.3,41.8,93.3,93.3C802.8,761,761,802.8,709.5,802.8z"></path>
+                    </svg>
+                    <span style="text-decoration: none; border-bottom: none;" class="text-pre-line">Adicionar cupom de desconto</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+</body>
+</html>
