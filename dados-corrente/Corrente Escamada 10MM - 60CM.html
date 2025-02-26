@@ -118,7 +118,7 @@
                   <h3 style="background-color: black; font-size: 40px; margin: 15px; font-weight:750;" class="">Dados de contato</h3>
                   <div class="form-group">
                     <div class="has-float-label">
-                      <input style="background-color: black; border-radius: 8px; font-size: 18px; border-color: rgba(255, 255, 255, .3);" type="email" class="form-control" name="contact.email" value="" data-testid="email" autocomplete="shipping email" autocapitalize="on" placeholder=" " id="contact.email" aria-labelledby="label_contact.email">
+                      <input required style="background-color: black; border-radius: 8px; font-size: 18px; border-color: rgba(255, 255, 255, .3);" type="email" class="form-control" name="contact.email" value="" data-testid="email" autocomplete="shipping email" autocapitalize="on" placeholder=" " id="contact.email" aria-labelledby="label_contact.email">
                       <label  class="input-label" id="label_contact.email" for="contact.email">E-mail</label>
                     </div>
                   </div>
@@ -282,7 +282,7 @@
     <div id="address-form-section" class="shipping-address-container m-top-half"><h4 style="font-size: 30px; margin: 15px; font-weight:750" class="panel-subheader">Dados de quem vai fazer o pagamento</h4>
         <div class="form-group">
             <div class="has-float-label">
-                <input style=" color: white; border-radius: 8px; font-size: 18px; border-color: rgba(255, 255, 255, .3); background-color: black;" type="text" class="form-control" name="billingAddress.first_name" data-testid="billing_first_name" autocomplete="billing given-name" placeholder=" " autocapitalize="on" id="billingAddress.first_name" aria-labelledby="label_billingAddress.first_name" value="">
+                <input required style=" color: white; border-radius: 8px; font-size: 18px; border-color: rgba(255, 255, 255, .3); background-color: black;" type="text" class="form-control" name="billingAddress.first_name" data-testid="billing_first_name" autocomplete="billing given-name" placeholder=" " autocapitalize="on" id="billingAddress.first_name" aria-labelledby="label_billingAddress.first_name" value="">
                 <label class="input-label" id="label_billingAddress.first_name" for="billingAddress.first_name">Nome</label>
             </div>
         </div>
